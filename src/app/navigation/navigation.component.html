@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand">ANONYMOUS</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link">CRM <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <a class="navbar-brand my-2 my-lg-0" href="#">TRABAJADOR 1</a>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row min-vh-100 flex-column flex-md-row">
+    <aside class="col-12 col-md-2 p-0 bg-dark flex-shrink-1">
+      <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2">
+        <div class="collapse navbar-collapse ">
+          <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+            <li class="nav-item">
+              <a routerLink="/" class="nav-link pl-0 text-nowrap" href="#"><i class="fa fa-home fa-fw"></i> <span class="font-weight-bold">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/marketing" class="nav-link pl-0" href="#"><i class="fa fa-bullhorn fa-fw"></i> <span class="d-none d-md-inline">Marketing</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <main class="col bg-faded py-3 flex-grow-1">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

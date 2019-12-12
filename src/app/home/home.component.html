@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row justify-content-between">
+    <div class="col-8">
+      <app-company-details></app-company-details>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header">
+            YOUTUBERS
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let youtuber of youtubers" class="list-group-item"><h5 [routerLink]="[ '/youtuber/' + youtuber.id ]" class="card-title text-center">{{youtuber.channelName}}</h5></li>
+          </ul>
+        </div>
+        <div class="card-body align-self-center">
+          <a routerLink="/youtuber-form"><button class="btn btn-primary">Añadir Youtuber</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

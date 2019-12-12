@@ -1,0 +1,22 @@
+<form #f="ngForm" (submit)="saveYoutuber()">
+  <div class="form-group">
+    <label for="channelName">Nombre del canal:</label>
+    <input  [(ngModel)]="youtuber.channelName" name="channelName" type="email" class="form-control" id="channelName">
+  </div>
+  <div class="form-group">
+    <label for="channelLink">Link del canal:</label>
+    <input [(ngModel)]="youtuber.channelLink" name="channelLink" class="form-control" id="channelLink">
+  </div>
+  <div class="form-group">
+    <label for="channelEmail">Email de ingreso / contacto:</label>
+    <input [(ngModel)]="youtuber.email" name="channelEmail" type="email" class="form-control" id="channelEmail">
+  </div>
+  <a>Metodo de pago / ingreso:</a>
+  <select [(ngModel)]="youtuber.chosenPaymentMethod" name="chosenPayment" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option value="Paypal">Paypal</option>
+    <option value="Tarjeta de credito">Tarjeta de credito</option>
+    <option value="Transferencia bancaria">Transferencia bancaria</option>
+    <option value="Bitcoin">Bitcoin</option>
+  </select>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
